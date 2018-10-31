@@ -17,6 +17,7 @@ RUN git clone https://github.com/nikic/php-ast.git \
 
 RUN git clone https://github.com/etsy/phan.git \
     && cd phan \
+    && git checkout tags/1.1.1 \
     && composer install \
     && ./test \
     && chmod a+x phan \
